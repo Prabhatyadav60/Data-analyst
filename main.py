@@ -1,7 +1,6 @@
 import os
 import streamlit as st
 import requests
-from dotenv import load_dotenv
 from langchain_core.messages import AIMessage
 from PyPDF2 import PdfReader
 import pandas as pd
@@ -10,9 +9,9 @@ from docx import Document
 import matplotlib.pyplot as plt
 
 
-load_dotenv()
-TOGETHER_API_KEY = os.getenv("TOGETHER_API_KEY")
-OCR_SPACE_API_KEY = os.getenv("OCR_SPACE_API_KEY")
+TOGETHER_API_KEY = st.secrets["TOGETHER_API_KEY"]
+OCR_SPACE_API_KEY = st.secrets["OCR_SPACE_API_KEY"]
+
 
 
 class llmClass:
