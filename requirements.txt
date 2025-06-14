@@ -1,0 +1,9 @@
+streamlit
+python-dotenv
+requests
+pandas
+openpyxl
+PyPDF2
+python-docx
+matplotlib
+langchain-core
